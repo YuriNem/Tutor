@@ -1,0 +1,59 @@
+@import '~font-awesome/css/font-awesome.css';
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400");
+
+@import './header/header.scss';
+
+@import './header/__main/header__main.scss';
+@import './header/__main-icon/header__main-icon.scss';
+@import './header/__main-name/header__main-name.scss';
+@import './header/__menu/header__menu.scss';
+@import './header/__menu-item/header__menu-item.scss';
+
+@import './main/main.scss';
+
+@import './anchor/anchor.scss';
+
+@import './aboutme/aboutme.scss';
+@import './aboutme/__photoside/aboutme__photoside.scss';
+@import './aboutme/__photoside-photo/aboutme__photoside-photo.scss';
+@import './aboutme/__textside/aboutme__textside.scss';
+@import './aboutme/__textside-name/aboutme__textside-name.scss';
+
+@import './article/article.scss';
+@import './article/__name/article__name.scss';
+@import './article/__text/article__text.scss';
+
+@import './classes/classes.scss';
+@import './classes/__name/classes__name.scss';
+@import './classes/__studing/classes__studing.scss';
+@import './classes/__article-name/classes__article-name.scss';
+@import './classes/__article-text/classes__article-text.scss';
+@import './classes/__departure/classes__departure.scss';
+
+@import './reviews/reviews.scss';
+@import './reviews/__name/reviews__name.scss';
+@import './reviews/__former/reviews__former.scss';
+@import './reviews/__current/reviews__current.scss';
+@import './reviews/__student/reviews__student.scss';
+
+@import './prices/prices.scss';
+@import './prices/__name/prices__name.scss';
+@import './prices/__text/prices__text.scss';
+@import './prices/__selects/prices__selects.scss';
+@import './prices/__show/prices__show.scss';
+
+@import './contacts/contacts.scss';
+@import './contacts/__name/contacts__name.scss';
+@import './contacts/__text/contacts__text.scss';
+@import './contacts/__icons/contacts__icons.scss';
+@import './contacts/__icon/contacts__icon.scss';
+@import './contacts/__icon-link/contacts__icon-link.scss';
+
+@import './footer/footer.scss';
+
+body {
+    display: grid;
+    margin: 0px auto;
+    font-family: "Roboto";
+}
