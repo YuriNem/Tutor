@@ -4,29 +4,30 @@ import '../style/style.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import reducers from './reducers';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 
 import AppContainer from './containers/App.js';
-
-import data from '../data/data.js';
 
 const initState = {
     subject: 'Математика - ОГЭ',
     method: 'Выезд',
     time: '60 минут',
-    data: data,
+    price: '700 рублей',
 }
 
 const store = createStore(
-    reducers,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+  reducers,
+  initState,
+  composeWithDevTools(applyMiddleware(thunk)),
 );
 
 const body = document.querySelector('body');
 ReactDOM.render(
   <Provider store={store}>
     <AppContainer />
-  </Provider>
-, body);
+  </Provider>, 
+body);

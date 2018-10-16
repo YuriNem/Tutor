@@ -1,20 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-      <header class="header">
-        <div class="header__main">
-          <div class="header__main-icon">
+      <header className="header">
+        <div className="header__main">
+          <div className="header__main-icon">
             <img src="../img/lambda.png" alt="лямбда" />
           </div>
-          <h3 class="header__main-name">Репетитор по математике и информатике</h3>
+          <h3 className="header__main-name">Репетитор по математике и информатике</h3>
         </div>
-        <nav class="header__menu">
-          <a href="#aboutme" class="header__menu-item">Обо мне</a>
-          <a href="#classes" class="header__menu-item">Занятия</a>
-          <a href="#reviews" class="header__menu-item">Отзывы</a>
-          <a href="#prices" class="header__menu-item">Цены</a>
-          <a href="#contacts" class="header__menu-item">Контакты</a>
+        <nav className="header__menu">
+          <Link to="/" className="header__menu-item">Обо мне</Link>
+          <Link to="/classes" className="header__menu-item">Занятия</Link>
+          <Link to="/reviews" className="header__menu-item">Отзывы</Link>
+          <Link to="/prices" className="header__menu-item">Цены</Link>
+          <Link to="/contacts" className="header__menu-item">Контакты</Link>
         </nav>
       </header>
     );
