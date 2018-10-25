@@ -4,7 +4,7 @@ const Prices = ({ subject, method, time, price, onChange }) => {
     return (
         <section className="prices">
             <h1 className="prices__name">Цены</h1>
-            <p className="prices__text">Готовлю к ОГЭ по математике и ЕГЭ по информатике, а также улучшаю успеваемость учеников 5-10 классов. Вы можете посмотреть цены на доступные услуги:</p>
+            <p className="prices__text">Готовлю к ОГЭ по математике и ЕГЭ по информатике, а также улучшаю успеваемость учеников 5-11 классов. Вы можете посмотреть цены на доступные услуги:</p>
             <div className="prices__selects">
                 <select name="prices__subject" id="prices__subject" className="prices__subject" value={subject} onChange={onChange('subject')}>
                     <option value="Математика - ОГЭ">Математика - ОГЭ</option>

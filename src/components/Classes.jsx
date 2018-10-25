@@ -10,7 +10,7 @@ const Classes = () => {
                 </div>
                     <div className="classes__article">
                         <h3  className="classes__article-name">Учёба</h3>
-                        <p className="classes__article-text">Беру учеников 5-10 классов. Готовлю по отработаной методике. Для первого занятия вам понадобится 2 тетрадки.</p>
+                        <p className="classes__article-text">Беру учеников 5-11 классов. Готовлю по отработаной методике. Для первого занятия вам понадобится 2 тетрадки.</p>
                     </div>
             </div>
             <div className="classes__departure">
